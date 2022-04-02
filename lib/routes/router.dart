@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:bottom_navbar/home_page.dart';
+import 'package:bottom_navbar/pages/login_page.dart';
 import 'package:bottom_navbar/posts/posts_page.dart';
 import 'package:bottom_navbar/posts/single_post_page.dart';
 import 'package:bottom_navbar/settings/settings_page.dart';
@@ -9,7 +10,8 @@ import 'package:bottom_navbar/users/users_page.dart';
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',
   routes: <AutoRoute>[
-    AutoRoute(path: '/', page: HomePage, children: [
+    AutoRoute(initial: true, page: LoginPage, path: '/'),
+    AutoRoute(path: '/home', page: HomePage, children: [
       AutoRoute(
           path: 'posts',
           name: 'PostRouter',
