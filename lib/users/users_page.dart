@@ -1,3 +1,5 @@
+import 'package:bottom_navbar/data/app_data.dart';
+import 'package:bottom_navbar/routes/router.gr.dart';
 import 'package:bottom_navbar/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
